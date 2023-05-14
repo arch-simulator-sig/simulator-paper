@@ -6,7 +6,7 @@
 | ----------------------------------------------- | ------------------------------------------------------------ | ---------------------------- | ------------- |
 | gem5                                            | https://github.com/gem5/gem5                                 |                              | 马子睿 陈胤桦 |
 | raspsim                                         | https://github.com/aengelke/raspsim                          |                              |               |
-| simplescalar                                    | https://pages.cs.wisc.edu/~mscalar/simplescalar.html         |                              | 段震伟        |
+| simplescalar                                    | https://pages.cs.wisc.edu/~mscalar/simplescalar.html         | VLIW processor simulator     | 段震伟        |
 | fusionSim                                       | x                                                            |                              |               |
 | hsaemu                                          | https://github.com/SSLAB-HSA/HSAemu                          |                              |               |
 | multi2sim                                       | https://github.com/Multi2Sim/multi2sim                       |                              |               |
@@ -30,4 +30,5 @@
 | mipt-mips                                       | https://github.com/MIPT-ILab/mipt-mips                       |                              |               |
 | cycle-accurate-SystemC-simulator-over-ramulator | https://github.com/Liu-Cheng/cycle-accurate-SystemC-simulator-over-ramulator |                              |               |
 | noculator                                       | https://github.com/CMU-SAFARI/NOCulator                      |                              |               |
+| soclib                                          | http://www.soclib.fr/trac/dev                                |                              |               |
 
