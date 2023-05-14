@@ -6,7 +6,7 @@
 | ----------------------------------------------- | ------------------------------------------------------------ | ---------------------------- | ------------- |
 | gem5                                            | https://github.com/gem5/gem5                                 |                              | 马子睿 陈胤桦 |
 | raspsim                                         | https://github.com/aengelke/raspsim                          |                              |               |
-| simplescalar                                    | https://pages.cs.wisc.edu/~mscalar/simplescalar.html         | VLIW processor simulator     | 段震伟        |
+| simplescalar                                    | https://github.com/toddmaustin/simplesim-3.0                 | VLIW processor simulator     | 段震伟        |
 | fusionSim                                       | x                                                            |                              |               |
 | hsaemu                                          | https://github.com/SSLAB-HSA/HSAemu                          |                              |               |
 | multi2sim                                       | https://github.com/Multi2Sim/multi2sim                       |                              |               |
