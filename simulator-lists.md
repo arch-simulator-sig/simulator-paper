@@ -12,7 +12,7 @@
 | mgsim             | https://github.com/svp-dev/mgsim           |                              |               |
 | zsim              | https://github.com/s5z/zsim                |                              |               |
 | sniper            | https://github.com/snipersim/snipersim     |                              |               |
-| scarab            | https://github.com/hpsresearchgroup/scarab |                              |               |
+| scarab            | https://github.com/hpsresearchgroup/scarab |                              | 丁庆辰        |
 | ramulator         | https://github.com/CMU-SAFARI/ramulator    |                              |               |
 | mcpat             | https://github.com/HewlettPackard/mcpat    |                              |               |
 | dramsys4.0        | https://github.com/tukl-msd/DRAMSys        |                              |               |
