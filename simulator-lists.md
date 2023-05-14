@@ -1,21 +1,28 @@
-1. Gem5 
-2. raspsim
-3. simplescalar
-4. fusionSim
-5. hsaemu
-6. multi2sim
-7. macsim
-8. mgsim
-9. zsim
-10. sniper
-11. scarab
-12. ramulator
-13. [mcpat](https://github.com/HewlettPackard/mcpat)        [ (M)ulti(c)ore (P)ower, (A)rea, and (T)iming ]
-14. dramsys4.0   [systemc]
-15. dramsim3
-16. dramsim2
-17. [cacti](https://github.com/HewlettPackard/cacti)   [memory input, output  access time, power, cycle time, and area]
-18. marss-riscv  [soc cycle accurate with ramulator and dramsim3]
-19. [map](https://github.com/sparcians/map)   [sparta + helios]
-20. champsim     [for branch predictor, no cycle accurate]
-21. riscv_vhdl   [systemc]
+# 开源模拟器列表
+
+| 开源项目          | 链接                                       | 概述                         |
+| ----------------- | ------------------------------------------ | ---------------------------- |
+| gem5              | https://github.com/gem5/gem5               |                              |
+| raspsim           | https://github.com/aengelke/raspsim        |                              |
+| simplescalar      | https://github.com/onesuper/SimpleScalar   |                              |
+| fusionSim         | x                                          |                              |
+| hsaemu            | x                                          |                              |
+| multi2sim         | https://github.com/Multi2Sim/multi2sim     |                              |
+| macsim            | https://github.com/gthparch/macsim         |                              |
+| mgsim             | https://github.com/svp-dev/mgsim           |                              |
+| zsim              | https://github.com/s5z/zsim                |                              |
+| sniper            | https://github.com/snipersim/snipersim     |                              |
+| scarab            | https://github.com/hpsresearchgroup/scarab |                              |
+| ramulator         | https://github.com/CMU-SAFARI/ramulator    |                              |
+| mcpat             | https://github.com/HewlettPackard/mcpat    |                              |
+| dramsys4.0        | https://github.com/tukl-msd/DRAMSys        |                              |
+| dramsim3          | https://github.com/umd-memsys/DRAMsim3     |                              |
+| dramsim2          | https://github.com/umd-memsys/DRAMSim2     |                              |
+| cacti             | https://github.com/HewlettPackard/cacti    |                              |
+| marss-riscv       | https://github.com/bucaps/marss-riscv      |                              |
+| map               | https://github.com/sparcians/map           |                              |
+| champsim          | https://github.com/ChampSim/ChampSim       |                              |
+| riscv_vhdl        | https://github.com/sergeykhbr/riscv_vhdl   |                              |
+| dreamCore v1 & v2 | https://github.com/lizhirui/DreamCoreV2    | cycle accurate ooo simulator |
+| openSparc T1 & T2 | 找我要code，官网失效                       |                              |
+
