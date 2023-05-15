@@ -15,3 +15,4 @@
 ## ISCA
 
 ## MICRO
+1. APOLLO: An Automated Power Modeling Framework for Runtime Power Introspection in High-Volume Commercial Microprocessors [2021]
