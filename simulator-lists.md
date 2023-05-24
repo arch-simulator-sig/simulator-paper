@@ -31,4 +31,5 @@
 | cycle-accurate-SystemC-simulator-over-ramulator | https://github.com/Liu-Cheng/cycle-accurate-SystemC-simulator-over-ramulator |                              |               |
 | noculator                                       | https://github.com/CMU-SAFARI/NOCulator                      |                              |               |
 | soclib                                          | http://www.soclib.fr/trac/dev                                |                              |               |
+| patos-simulator                                 | https://github.com/t-crest/patmos-simulator                  | 多核，基于ramulator进行Mem模拟 |               |
 
