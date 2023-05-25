@@ -17,3 +17,4 @@
 ## MICRO
 1. APOLLO: An Automated Power Modeling Framework for Runtime Power Introspection in High-Volume Commercial Microprocessors [2021]
 2. Directed Statistical Warming through Time Traveling [2019]
+3. RpStacks-MT: A High-Throughput Design Evaluation Methodology for Multi-Core Processors[2018]
