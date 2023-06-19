@@ -4,7 +4,7 @@
 
 | 开源项目                                        | 链接                                                         | 概述                         | 负责人        |
 | ----------------------------------------------- | ------------------------------------------------------------ | ---------------------------- | ------------- |
-| gem5                                            | https://github.com/gem5/gem5                                 |                              | 马子睿 陈胤桦 |
+| gem5                                            | https://github.com/gem5/gem5                                 |                              |  |
 | raspsim                                         | https://github.com/aengelke/raspsim                          |                              |               |
 | simplescalar                                    | https://github.com/toddmaustin/simplesim-3.0                 | VLIW processor simulator     | 段震伟        |
 | fusionSim                                       | x                                                            |                              |               |
@@ -32,4 +32,5 @@
 | noculator                                       | https://github.com/CMU-SAFARI/NOCulator                      |                              |               |
 | soclib                                          | http://www.soclib.fr/trac/dev                                |                              |               |
 | patos-simulator                                 | https://github.com/t-crest/patmos-simulator                  | 多核，基于ramulator进行Mem模拟 |               |
+| snipersim | https://github.com/snipersim/snipersim | 可视化相当NB | |
 
