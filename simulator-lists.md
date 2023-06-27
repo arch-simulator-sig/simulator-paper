@@ -6,7 +6,7 @@
 | ----------------------------------------------- | ------------------------------------------------------------ | ---------------------------- | ------------- |
 | gem5                                            | https://github.com/gem5/gem5                                 |                              |  |
 | raspsim                                         | https://github.com/aengelke/raspsim                          |                              |               |
-| simplescalar                                    | https://github.com/toddmaustin/simplesim-3.0                 | VLIW processor simulator     | 段震伟        |
+| simplescalar                                    | https://github.com/toddmaustin/simplesim-3.0                 | VLIW processor simulator     |         |
 | fusionSim                                       | x                                                            |                              |               |
 | hsaemu                                          | https://github.com/SSLAB-HSA/HSAemu                          |                              |               |
 | multi2sim                                       | https://github.com/Multi2Sim/multi2sim                       |                              |               |
@@ -16,7 +16,7 @@
 | sniper                                          | https://github.com/snipersim/snipersim                       |                              |               |
 | scarab                                          | https://github.com/hpsresearchgroup/scarab                   |                              | 丁庆辰 段震伟 |
 | ramulator                                       | https://github.com/CMU-SAFARI/ramulator                      |                              |               |
-| mcpat                                           | https://github.com/HewlettPackard/mcpat                      |                              |               |
+| mcpat                                           | https://github.com/HewlettPackard/mcpat                      | https://github.com/H2020-COSSIM/cMcPAT |               |
 | dramsys4.0                                      | https://github.com/tukl-msd/DRAMSys                          |                              |               |
 | dramsim3                                        | https://github.com/umd-memsys/DRAMsim3                       |                              |               |
 | dramsim2                                        | https://github.com/umd-memsys/DRAMSim2                       |                              |               |
@@ -33,4 +33,9 @@
 | soclib                                          | http://www.soclib.fr/trac/dev                                |                              |               |
 | patos-simulator                                 | https://github.com/t-crest/patmos-simulator                  | 多核，基于ramulator进行Mem模拟 |               |
 | snipersim | https://github.com/snipersim/snipersim | 可视化相当NB | |
+| or1ksim | https://github.com/openrisc/or1ksim |  | |
+| parade | https://github.com/cdsc-github/parade-ara-simulator |  | |
+| swarmArch | https://github.com/SwarmArch/sim |  | |
+| out-of-roder simulator | https://github.com/Jacob-Hoff-man/cs2410 |  | |
+| kite simulaotr | https://github.com/yonsei-icsl/Kite |  | |
 
