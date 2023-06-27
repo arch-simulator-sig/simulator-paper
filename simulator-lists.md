@@ -37,5 +37,5 @@
 | parade | https://github.com/cdsc-github/parade-ara-simulator |  | |
 | swarmArch | https://github.com/SwarmArch/sim |  | |
 | out-of-roder simulator | https://github.com/Jacob-Hoff-man/cs2410 |  | |
-| kite simulaotr | https://github.com/yonsei-icsl/Kite |  | |
+| kite simulaotr | https://github.com/yonsei-icsl/Kite | 已经看完，没有太大的参考价值，主要维护了ticks变量用于控制时钟，latency标识exu的执行模块具体的流水级别，但是仅限于ticks++，同时bpu设计缺失，cache write throuth，整体为5级流水架构 | 段震伟 |
 
