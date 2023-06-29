@@ -7,7 +7,6 @@ https://pages.cs.wisc.edu/~arch/www/tools.html
 
 1. performance simulation tools
 2. the gem5 simulator
-3. 
 
 ## ASPLOS
 

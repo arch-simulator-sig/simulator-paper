@@ -6,6 +6,7 @@
 | ----------------------------------------------- | ------------------------------------------------------------ | ---------------------------- | ------------- |
 | gem5                                            | https://github.com/gem5/gem5                                 | 离散事件驱动模型，不是时钟驱动，难以做到cycle accurate，但是很多优秀的写法可以借鉴，比如实现了门级的stdcell，实现了动态功耗统计，还有一些抽象功能的写法，都较为优秀。微架构是alpha21264，缺点是写法要基于原有的框架进行实现，但是原有框架兼容性较高，损失了相当的性能，且修改微架构成本过高。使用python作为用户接口调用底层的C++实现，目前可能并不需要 | 段震伟 |
 | raspsim                                         | https://github.com/aengelke/raspsim                          | 32核vcpu，代码量过大，看也能看，但是没文档，优先级低，后边再看 |               |
+| Asim | https://github.com/Asim-Modeling |  | |
 | simplescalar                                    | https://github.com/toddmaustin/simplesim-3.0                 | VLIW processor simulator     |         |
 | fusionSim                                       | x                                                            |                              |               |
 | hsaemu                                          | https://github.com/SSLAB-HSA/HSAemu                          |                              |               |
