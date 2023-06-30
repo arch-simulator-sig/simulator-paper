@@ -1,4 +1,4 @@
-# 开源模拟器列表
+# 开源模拟器/仿真器列表
 
 要求：理解框架的原理，并给出报告讲解相关实现，录屏
 
@@ -8,6 +8,7 @@
 | raspsim                                         | https://github.com/aengelke/raspsim                          | 32核vcpu，代码量过大，看也能看，但是没文档，优先级低，后边再看 |               |
 | Asim | https://github.com/Asim-Modeling |  | |
 | simplescalar                                    | https://github.com/toddmaustin/simplesim-3.0                 | VLIW processor simulator     |         |
+| esysim | https://github.com/wangeddie67/ESYSim |  | |
 | fusionSim                                       | x                                                            |                              |               |
 | hsaemu                                          | https://github.com/SSLAB-HSA/HSAemu                          |                              |               |
 | multi2sim                                       | https://github.com/Multi2Sim/multi2sim                       |                              |               |
