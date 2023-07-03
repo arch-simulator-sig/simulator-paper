@@ -2,12 +2,12 @@
 
 要求：理解框架的原理，并给出报告讲解相关实现，录屏
 
-| 开源项目                                        | 链接                                                         | 概述                         | 负责人        |
+| 开源项目                                        | 链接                                                         | 概述                         | 评级    |
 | ----------------------------------------------- | ------------------------------------------------------------ | ---------------------------- | ------------- |
-| gem5                                            | https://github.com/gem5/gem5                                 | 离散事件驱动模型，不是时钟驱动，难以做到cycle accurate，但是很多优秀的写法可以借鉴，比如实现了门级的stdcell，实现了动态功耗统计，还有一些抽象功能的写法，都较为优秀。微架构是alpha21264，缺点是写法要基于原有的框架进行实现，但是原有框架兼容性较高，损失了相当的性能，且修改微架构成本过高。使用python作为用户接口调用底层的C++实现，目前可能并不需要 | 段震伟 |
-| raspsim                                         | https://github.com/aengelke/raspsim                          | 32核vcpu，代码量过大，看也能看，但是没文档，优先级低，后边再看 |               |
-| esesc | https://github.com/masc-ucsc/esesc | qemu based，update recently | |
-| risc-vp | https://github.com/agra-uni-bremen/riscv-vp | tlm2.0 + instruction-based timing model，不考虑乱序、流水线、cache等 | |
+| gem5                                            | https://github.com/gem5/gem5                                 | 离散事件驱动模型，不是时钟驱动，难以做到cycle accurate，但是很多优秀的写法可以借鉴，比如实现了门级的stdcell，实现了动态功耗统计，还有一些抽象功能的写法，都较为优秀。微架构是alpha21264，缺点是写法要基于原有的框架进行实现，但是原有框架兼容性较高，损失了相当的性能，且修改微架构成本过高。使用python作为用户接口调用底层的C++实现，目前可能并不需要 | :star::star::star: |
+| raspsim                                         | https://github.com/aengelke/raspsim                          | 32核vcpu，代码量过大，看也能看，但是没文档，优先级低，后边再看 | :star::star: |
+| esesc | https://github.com/masc-ucsc/esesc | qemu based，update recently | :star::star: |
+| risc-vp | https://github.com/agra-uni-bremen/riscv-vp | tlm2.0 + instruction-based timing model，不考虑乱序、流水线、cache等 | :star: |
 | Asim | https://github.com/Asim-Modeling |  | |
 | simplescalar                                    | https://github.com/toddmaustin/simplesim-3.0                 | VLIW processor simulator     |         |
 | esysim | https://github.com/wangeddie67/ESYSim |  | |
@@ -17,7 +17,7 @@
 | mgsim                                           | https://github.com/svp-dev/mgsim                             |                              |               |
 | zsim                                            | https://github.com/s5z/zsim                                  |                              |               |
 | sniper                                          | https://github.com/snipersim/snipersim                       |                              |               |
-| scarab                                          | https://github.com/hpsresearchgroup/scarab                   |                              | 丁庆辰 段震伟 |
+| scarab                                          | https://github.com/hpsresearchgroup/scarab                   |                              |  |
 | ramulator                                       | https://github.com/CMU-SAFARI/ramulator                      |                              |               |
 | mcpat                                           | https://github.com/HewlettPackard/mcpat                      | https://github.com/H2020-COSSIM/cMcPAT |               |
 | dramsys4.0                                      | https://github.com/tukl-msd/DRAMSys                          |                              |               |
@@ -28,10 +28,10 @@
 | map                                             | https://github.com/sparcians/map                             |                              |               |
 | champsim                                        | https://github.com/ChampSim/ChampSim                         |                              |               |
 | riscv_vhdl                                      | https://github.com/sergeykhbr/riscv_vhdl                     |                              |               |
-| dreamCore v1 & v2                               | https://github.com/lizhirui/DreamCoreV2                      | cycle accurate ooo simulator | 段震伟        |
+| dreamCore v1 & v2                               | https://github.com/lizhirui/DreamCoreV2                      | cycle accurate ooo simulator | :star::star::star: |
 | openSparc T1 & T2                               | 找我要code，官网失效                                         | 工业界源码                   |               |
-| mipt-mips                                       | https://github.com/MIPT-ILab/mipt-mips                       |                              |               |
-| cycle-accurate-SystemC-simulator-over-ramulator | https://github.com/Liu-Cheng/cycle-accurate-SystemC-simulator-over-ramulator |                              |               |
+| mipt-mips                                       | https://github.com/MIPT-ILab/mipt-mips                       | cycle accurate | :star::star::star: |
+| cycle-accurate-SystemC-simulator-over-ramulator | https://github.com/Liu-Cheng/cycle-accurate-SystemC-simulator-over-ramulator |                              | :star::star::star: |
 | noculator                                       | https://github.com/CMU-SAFARI/NOCulator                      |                              |               |
 | soclib                                          | http://www.soclib.fr/trac/dev                                |                              |               |
 | patos-simulator                                 | https://github.com/t-crest/patmos-simulator                  | 多核，基于ramulator进行Mem模拟 |               |
