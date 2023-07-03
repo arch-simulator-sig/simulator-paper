@@ -11,9 +11,9 @@
 | Asim | https://github.com/Asim-Modeling |  | |
 | simplescalar                                    | https://github.com/toddmaustin/simplesim-3.0                 | VLIW processor simulator     |         |
 | esysim | https://github.com/wangeddie67/ESYSim |  | |
-| hsaemu                                          | https://github.com/SSLAB-HSA/HSAemu                          |                              |               |
-| multi2sim                                       | https://github.com/Multi2Sim/multi2sim                       |                              |               |
-| macsim                                          | https://github.com/gthparch/macsim                           |                              |               |
+| hsaemu                                          | https://github.com/SSLAB-HSA/HSAemu                          | apu system. too old | :star: |
+| multi2sim                                       | https://github.com/Multi2Sim/multi2sim                       | cpu and gpu simulator | :star: |
+| macsim                                          | https://github.com/gthparch/macsim                           | trace driven or execution-drive cycle level simulator,支持多核、互联网络模型和电源模型 | :star::star: |
 | mgsim                                           | https://github.com/svp-dev/mgsim                             |                              |               |
 | zsim                                            | https://github.com/s5z/zsim                                  |                              |               |
 | sniper                                          | https://github.com/snipersim/snipersim                       |                              |               |
