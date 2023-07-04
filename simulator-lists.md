@@ -1,6 +1,6 @@
 # 开源模拟器/仿真器列表
 
-要求：理解框架的原理，并给出报告讲解相关实现，录屏
+要求：理解框架的原理，并给出报告讲解相关实现，录屏，thanks ArchShineZ
 
 | 开源项目                                        | 链接                                                         | 概述                         | 评级    |
 | ----------------------------------------------- | ------------------------------------------------------------ | ---------------------------- | ------------- |
@@ -9,7 +9,7 @@
 | esesc | https://github.com/masc-ucsc/esesc | qemu based，update recently | :star::star: |
 | risc-vp | https://github.com/agra-uni-bremen/riscv-vp | tlm2.0 + instruction-based timing model，不考虑乱序、流水线、cache等 | :star: |
 | Asim | https://github.com/Asim-Modeling |  | |
-| simplescalar                                    | https://github.com/toddmaustin/simplesim-3.0                 | VLIW processor simulator     |         |
+| simplescalar                                    | https://github.com/toddmaustin/simplesim-3.0                 | ooo  processor simulator |         |
 | esysim | https://github.com/wangeddie67/ESYSim |  | |
 | hsaemu                                          | https://github.com/SSLAB-HSA/HSAemu                          | apu system. too old | :star: |
 | multi2sim                                       | https://github.com/Multi2Sim/multi2sim                       | cpu and gpu simulator | :star: |
