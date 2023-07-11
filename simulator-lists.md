@@ -2,9 +2,9 @@
 
 要求：理解框架的原理，并给出报告讲解相关实现，录屏，thanks ArchShineZ
 
-| 开源项目                                        | 链接                                                         | 概述                         | 评级    |
+| 开源项目                                        | 链接                                                         | 概述                       | 评级    |
 | ----------------------------------------------- | ------------------------------------------------------------ | ---------------------------- | ------------- |
-| gem5                                            | https://github.co                                 | 乱序核是tick driven, cache是event driven，很多优秀的写法可以借鉴，比如实现了门级的stdcell，实现了动态功耗统计，还有一些抽象功能的写法，都较为优秀。微架构是alpha21264，缺点是写法要基于原有的框架进行实现，但是原有框架兼容性较高，损失了相当的性能，且修改微架构成本过高。使用python作为用户接口调用底层的C++实现，目前可能并不需要 | :star::star::star: |
+| gem5                                            | https://github.com/gem5/gem5     | 乱序核是tick driven, cache是event driven，很多优秀的写法可以借鉴，比如实现了门级的stdcell，实现了动态功耗统计，还有一些抽象功能的写法，都较为优秀。微架构是alpha21264，缺点是写法要基于原有的框架进行实现，但是原有框架兼容性较高，损失了相当的性能，且修改微架构成本过高。使用python作为用户接口调用底层的C++实现，目前可能并不需要 | :star::star::star: |
 | raspsim                                         | https://github.com/aengelke/raspsim                          | 32核vcpu，代码量过大，看也能看，但是没文档，优先级低，后边再看 | :star::star: |
 | esesc | https://github.com/masc-ucsc/esesc | qemu based，update recently | :star::star: |
 | risc-vp | https://github.com/agra-uni-bremen/riscv-vp | tlm2.0 + instruction-based timing model，不考虑乱序、流水线、cache等 | :star: |
@@ -42,4 +42,5 @@
 | out-of-roder simulator | https://github.com/Jacob-Hoff-man/cs2410 |  | |
 | kite simulaotr | https://github.com/yonsei-icsl/Kite | 已经看完，没有太大的参考价值，主要维护了ticks变量用于控制时钟，latency标识exu的执行模块具体的流水级别，但是仅限于ticks++，同时bpu设计缺失，cache write throuth，整体为5级流水架构 |  |
 | Wisconsin Wind Tunnel II | https://pages.cs.wisc.edu/~wwt/wwt2/ |  |  |
+| fifo_ca_model | https://github.com/liang-aquarius/ca_model | 每个周期对所有module run and update，类似SCore的思路，有dump wave的功能，实现是每个clk进行连线，大量的赋值语句，会很慢 | |
 
