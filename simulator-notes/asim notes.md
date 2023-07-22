@@ -70,3 +70,42 @@ asim通过fifo队列实现ports，每个module声明port的一端。使用utilit
 
 **可以参考时序模型 module设计 ports设计**
 
+
+
+## 代码解析
+
+### ports实现
+
+ports基于fifo实现，fifo参考`fifo.h`比较简单，buffer的两个端点是BasePort类，该类共享了name,scope,state等信息，论文中提及的bandwidth latency也在里面。
+
+`ports.cpp`实现了`ConnectAll`，
+
+1. 遍历全局的AllPorts
+2. 根据name连接port，期间根据type统计不同port的数量
+3. writeport单独考虑，
+
+
+
+
+
+`ConnectPorts`方法是核心函数：
+
+1. 确定buffer两端的datatype相等
+
+2. 将当前port的bandwidth设置为接收端bandwidth,这里有个比较的过程,有<=0的情况：
+   1. 目标端口的bandwidth>0 :  port->bandwidth = rdport->bandwidth
+   2. 反之，rdport->bandwidth = port->bandwidth
+3. 设置latency,同样考虑负数的情况
+   1. rdport->latency >= 0
+      1. port->latency == -1 : port->latency=rdport->latency，这是write port首次写入的latency，需要重置
+      2. port->latency != rdport->latency，分两种情况，多播端口或者两端的latency不相等，这里暂时考虑多播端口，port->latency = -2
+   2. 反之，rdport->latency = port->latency
+4. 根据rdport的latency和bandwidth创建storage
+5. connected = true
+6. 根据rdport的类型进行不同操作
+   1. peek type : 没看太明白。
+   2. write type || writePhase type : 没看太明白。
+
+
+
+con

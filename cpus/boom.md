@@ -8,19 +8,23 @@ rocket-core : rv64gc + mmu + bpu + float  + unblocked dcache + boot linux
 
 rocket-core pipeline
 
-<img src="./img/boom/image-20230718195747728.png" alt="image-20230718195747728" style="zoom: 50%;" />
+<img src="./img/boom/image-20230718195747728.png" alt="image-20230718195747728" style="zoom: 33%;" />
 
 rocket-core icache
 
-<img src="./img/boom/image-20230718195911394.png" alt="image-20230718195911394" style="zoom:50%;" />
+<img src="./img/boom/image-20230718195911394.png" alt="image-20230718195911394" style="zoom: 33%;" />
 
 rocket-core dcache
 
-<img src="./img/boom/image-20230718195946046.png" alt="image-20230718195946046" style="zoom:50%;" />
+<img src="./img/boom/image-20230718195946046.png" alt="image-20230718195946046" style="zoom: 33%;" />
 
 
 
+### Rocket Core Fetch
 
+Frontend用于取指和预译码，
+
+![img](./img/boom/v2-84295f421135df55c8d844653ee3fb90_r.jpg)
 
 
 
