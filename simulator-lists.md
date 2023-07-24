@@ -4,12 +4,14 @@
 
 | 开源项目                                        | 链接                                                         | 概述                       | note | 评级    |
 | ----------------------------------------------- | ------------------------------------------------------------ | ---------------------------- | ------------- | ------------- |
+| map                                             | https://github.com/sparcians/map                             | 20年老法师框架，应有尽有，维护也很积极 |               | :star::star::star::star::star: |
+| Asim | https://github.com/Asim-Modeling | 30年老法师框架，藏东西了 | [asim-note](./simulator-notes/asim-notes.md) | :star::star::star::star: |
+| scarab                                          | https://github.com/hpsresearchgroup/scarab                   | 挑不出毛病，除了no smp |  | :star::star::star::star: |
 | gem5                                            | https://github.com/gem5/gem5     | 乱序核是tick driven, cache是event driven，很多优秀的写法可以借鉴，比如实现了门级的stdcell，实现了动态功耗统计，还有一些抽象功能的写法，都较为优秀。微架构是alpha21264，缺点是写法要基于原有的框架进行实现，但是原有框架兼容性较高，损失了相当的性能，且修改微架构成本过高。使用python作为用户接口调用底层的C++实现，目前可能并不需要 |  | :star::star::star: |
-| riscv-ovpsim | https://github.com/riscv-ovpsim/imperas-riscv-tests | 印度理工和sifive建模用，riscv主流工具 |  | :star::star::star: |
+| riscv-ovpsim | https://github.com/riscv-ovpsim/imperas-riscv-tests | 印度理工和sifive建模用，riscv主流工具，只开源了bin |  | :star::star::star: |
 | raspsim                                         | https://github.com/aengelke/raspsim                          | 32核vcpu，代码量过大，看也能看，但是没文档，优先级低，后边再看 |  | :star::star: |
 | esesc | https://github.com/masc-ucsc/esesc | qemu based，update recently |  | :star::star: |
 | risc-vp | https://github.com/agra-uni-bremen/riscv-vp | tlm2.0 + instruction-based timing model，不考虑乱序、流水线、cache等 |  | :star: |
-| Asim | https://github.com/Asim-Modeling |  | [asim-note](./simulator-notes/asim-notes.md) | :star::star::star::star::star: |
 | sinuca | https://github.com/mazalves/sinuca | |  |  |
 | simplescalar                                    | https://github.com/toddmaustin/simplesim-3.0                 | ooo  processor simulator |         |         |
 | esysim | https://github.com/wangeddie67/ESYSim | 仿真模型 | | |
@@ -19,7 +21,6 @@
 | mgsim                                           | https://github.com/svp-dev/mgsim                             | for teaching |               |               |
 | zsim                                            | https://github.com/s5z/zsim                                  |                              |               |               |
 | sniper                                          | https://github.com/snipersim/snipersim                       |                              |               |               |
-| scarab                                          | https://github.com/hpsresearchgroup/scarab                   |                              |  | :star::star::star::star: |
 | ramulator                                       | https://github.com/CMU-SAFARI/ramulator                      |                              |               |               |
 | mcpat                                           | https://github.com/HewlettPackard/mcpat                      | https://github.com/H2020-COSSIM/cMcPAT |               |               |
 | dramsys4.0                                      | https://github.com/tukl-msd/DRAMSys                          |                              |               |               |
@@ -27,7 +28,6 @@
 | dramsim2                                        | https://github.com/umd-memsys/DRAMSim2                       |                              |               |               |
 | cacti                                           | https://github.com/HewlettPackard/cacti                      |                              |               |               |
 | marss-riscv                                     | https://github.com/bucaps/marss-riscv                        |                              |               |               |
-| map                                             | https://github.com/sparcians/map                             |                              |               |               |
 | champsim                                        | https://github.com/ChampSim/ChampSim                         | for education |               | :star::star::star::star: |
 | riscv_vhdl                                      | https://github.com/sergeykhbr/riscv_vhdl                     |                              |               |               |
 | dreamCore v1 & v2                               | https://github.com/lizhirui/DreamCoreV2                      | cycle accurate ooo simulator |  | :star::star::star: |
