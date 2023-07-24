@@ -74,6 +74,8 @@ asim通过fifo队列实现ports，每个module声明port的一端。使用utilit
 
 ## 代码解析
 
+### module实现
+
 ### ports实现
 
 ports基于fifo实现，fifo参考`fifo.h`比较简单，buffer的两个端点是BasePort类，该类共享了name,scope,state等信息，论文中提及的bandwidth latency也在里面。
@@ -108,4 +110,5 @@ ports基于fifo实现，fifo参考`fifo.h`比较简单，buffer的两个端点�
 
 
 
-con
+
+
