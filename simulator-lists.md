@@ -4,7 +4,7 @@
 
 | 开源项目                                        | 链接                                                         | 概述                       | note | 评级    |
 | ----------------------------------------------- | ------------------------------------------------------------ | ---------------------------- | ------------- | ------------- |
-| map                                             | https://github.com/sparcians/map                             | 20年老法师框架，应有尽有，维护也很积极 |               | :star::star::star::star::star: |
+| map                                             | https://github.com/sparcians/map                             | 20年老法师框架，应有尽有，维护也很积极，可以与systemc gem5等lian'dong |               | :star::star::star::star::star: |
 | Asim | https://github.com/Asim-Modeling | 30年老法师框架，藏东西了 | [asim-note](./simulator-notes/asim-notes.md) | :star::star::star::star: |
 | scarab                                          | https://github.com/hpsresearchgroup/scarab                   | 挑不出毛病，除了no smp |  | :star::star::star::star: |
 | champsim                                        | https://github.com/ChampSim/ChampSim                         | for education，简简单单入个门 |               | :star::star::star::star: |
@@ -13,6 +13,7 @@
 | riscv-ovpsim | https://github.com/riscv-ovpsim/imperas-riscv-tests | 印度理工和sifive建模用，riscv主流工具，只开源了bin |  | :star::star::star: |
 | raspsim                                         | https://github.com/aengelke/raspsim                          | 32核vcpu，代码量过大，看也能看，但是没文档，优先级低，后边再看 |  | :star::star: |
 | esesc | https://github.com/masc-ucsc/esesc | qemu based，update recently |  | :star::star: |
+| fifo_ca_model | https://github.com/liang-aquarius/ca_model | 每个周期对所有module run and update，类似SCore的思路，有dump wave的功能，实现是每个clk进行连线，大量的赋值语句，会很慢，跟Score一个样，说明不能瞎琢磨 | | :star::star: |
 | macsim                                          | https://github.com/gthparch/macsim                           | trace driven or execution-drive cycle level simulator,支持多核、互联网络模型和电源模型 |  | :star::star: |
 | risc-vp | https://github.com/agra-uni-bremen/riscv-vp | tlm2.0 + instruction-based timing model，不考虑乱序、流水线、cache等 |  | :star: |
 | hsaemu                                          | https://github.com/SSLAB-HSA/HSAemu                          | apu system. too old |  | :star: |
@@ -45,5 +46,4 @@
 | out-of-roder simulator | https://github.com/Jacob-Hoff-man/cs2410 |  | | |
 | kite simulaotr | https://github.com/yonsei-icsl/Kite | 已经看完，没有太大的参考价值，主要维护了ticks变量用于控制时钟，latency标识exu的执行模块具体的流水级别，但是仅限于ticks++，同时bpu设计缺失，cache write throuth，整体为5级流水架构 |  |  |
 | Wisconsin Wind Tunnel II | https://pages.cs.wisc.edu/~wwt/wwt2/ |  |  |  |
-| fifo_ca_model | https://github.com/liang-aquarius/ca_model | 每个周期对所有module run and update，类似SCore的思路，有dump wave的功能，实现是每个clk进行连线，大量的赋值语句，会很慢 | | |
 
