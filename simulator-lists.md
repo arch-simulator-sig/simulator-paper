@@ -25,24 +25,24 @@
 | simplescalar                                    | https://github.com/toddmaustin/simplesim-3.0                 | ooo  processor simulator |         |         |
 | esysim | https://github.com/wangeddie67/ESYSim | 仿真模型 | | |
 | mgsim                                           | https://github.com/svp-dev/mgsim                             | for teaching |               |               |
-| zsim                                            | https://github.com/s5z/zsim                                  |                              |               |               |
-| sniper                                          | https://github.com/snipersim/snipersim                       |                              |               |               |
-| ramulator                                       | https://github.com/CMU-SAFARI/ramulator                      |                              |               |               |
-| mcpat                                           | https://github.com/HewlettPackard/mcpat                      | https://github.com/H2020-COSSIM/cMcPAT |               |               |
+| zsim                                            | https://github.com/s5z/zsim                                  | 数亿条指令/秒，not ca |               |               |
+| sniper                                          | https://github.com/snipersim/snipersim                       | 无从吐槽 |               |               |
+| ramulator                                       | https://github.com/CMU-SAFARI/ramulator                      | ca mem model |               |               |
+| mcpat                                           | https://github.com/HewlettPackard/mcpat                      | https://github.com/H2020-COSSIM/cMcPAT | gem5 based |               |
 | dramsys4.0                                      | https://github.com/tukl-msd/DRAMSys                          |                              |               |               |
 | dramsim3                                        | https://github.com/umd-memsys/DRAMsim3                       |                              |               |               |
 | dramsim2                                        | https://github.com/umd-memsys/DRAMSim2                       |                              |               |               |
-| cacti                                           | https://github.com/HewlettPackard/cacti                      |                              |               |               |
+| cacti                                           | https://github.com/HewlettPackard/cacti                      | analytical tool that takes a set of cache/memory para- meters as input and calculates its access time, power, cycle  time, and area. |               |               |
 | marss-riscv                                     | https://github.com/bucaps/marss-riscv                        |                              |               |               |
 | riscv_vhdl                                      | https://github.com/sergeykhbr/riscv_vhdl                     |                              |               |               |
 | openSparc T1 & T2                               | 找我要code，官网失效                                         | 工业界源码,not cycle accurate 暂时搁置，不精确，算了 |  | :star::star::star: |
 | noculator                                       | https://github.com/CMU-SAFARI/NOCulator                      |                              |               |               |
 | soclib                                          | http://www.soclib.fr/trac/dev                                |                              |               |               |
 | patos-simulator                                 | https://github.com/t-crest/patmos-simulator                  | 多核，基于ramulator进行Mem模拟 |               |               |
-| snipersim | https://github.com/snipersim/snipersim | 可视化相当NB | | |
+| snipersim | https://github.com/snipersim/snipersim | 区间模型，数学模型，比较难上手 | | |
 | or1ksim | https://github.com/openrisc/or1ksim | function model | | |
 | parade | https://github.com/cdsc-github/parade-ara-simulator | gem5套壳ca | | |
-| swarmArch | https://github.com/SwarmArch/sim |  | | |
+| swarmArch | https://github.com/SwarmArch/sim | not ca，比较新，MIT，更注重分析应用程序 | | |
 | out-of-roder simulator | https://github.com/Jacob-Hoff-man/cs2410 |  | | |
 | kite simulaotr | https://github.com/yonsei-icsl/Kite | 已经看完，没有太大的参考价值，主要维护了ticks变量用于控制时钟，latency标识exu的执行模块具体的流水级别，但是仅限于ticks++，同时bpu设计缺失，cache write throuth，整体为5级流水架构 |  |  |
 | Wisconsin Wind Tunnel II | https://pages.cs.wisc.edu/~wwt/wwt2/ |  |  |  |
