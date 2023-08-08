@@ -16,4 +16,12 @@ cycle accurate full system simulator and virtual machine
 
 ## 问题
 
-给人一种NEMU 加了微架构的感觉
+给人一种NEMU加了微架构的感觉
+
+PTLsim将每个周期所有的事件记录到event ringbuf，该struct 200行，真有你的！
+
+
+
+## 可以借鉴的地方
+
+amd-k8的微架构写法
