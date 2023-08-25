@@ -16,7 +16,7 @@ rocket-core icache
 
 rocket-core dcache
 
-<img src="./img/boom/image-20230718195946046.png" alt="image-20230718195946046" style="zoom: 33%;" />
+<img src="./img/boom/image-20230718195946046.png" alt="image-20230718195946046" style="zoom: 200%;" />
 
 
 
@@ -38,7 +38,7 @@ Frontend用于取指和预译码，
 
 
 
-
+[rocket-chip overview](https://www.cl.cam.ac.uk/~jrrk2/docs/untether-v0.2/overview/)
 
 https://www.zhihu.com/column/c_1425551698199130112
 
@@ -46,3 +46,12 @@ https://www.zhihu.com/column/c_1425551698199130112
 
 [Rocket Core: 译码逻辑](https://www.jianshu.com/p/ec38c4ce56ce)
 
+[rocket汇总](https://www.cnblogs.com/wjcdx/tag/rocket/)
+
+https://www.francisz.cn/2022/03/18/rocket-inclusive-cache/
+
+[shili blog](https://shili2017.github.io/categories/%E5%86%85%E5%AD%98%E4%B8%80%E8%87%B4%E6%80%A7%E4%B8%8E%E7%BC%93%E5%AD%98%E4%B8%80%E8%87%B4%E6%80%A7/)
+
+https://blog.csdn.net/weixin_42683993/article/details/89106876
+
+https://blog.csdn.net/a_weiming/category_8437329.html?spm=1001.2014.3001.5482
