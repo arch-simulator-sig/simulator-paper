@@ -75,6 +75,7 @@ asim通过fifo队列实现ports，每个module声明port的一端。使用utilit
 ## 代码解析
 
 ### module实现
+asim/module.h中定义了ASIM_MODULE_CLASS类，这是所有module类的抽象基类。继承自`ASIM_REGISTRY_CLASS`, `ASIM_DRAL_NODE_CLASS`, `ASIM_CLOCKABLE_CLASS`和`ASIM_ADF_NODE_CLASS`。
 
 ### ports实现
 
