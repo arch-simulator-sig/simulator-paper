@@ -75,7 +75,21 @@ asim通过fifo队列实现ports，每个module声明port的一端。使用utilit
 ## 代码解析
 
 ### module实现
-asim/module.h中定义了ASIM_MODULE_CLASS类，这是所有module类的抽象基类。继承自`ASIM_REGISTRY_CLASS`, `ASIM_DRAL_NODE_CLASS`, `ASIM_CLOCKABLE_CLASS`和`ASIM_ADF_NODE_CLASS`。
+asim/module.h中定义了`ASIM_MODULE_CLASS`类，这是所有module类的抽象基类。继承自`ASIM_REGISTRY_CLASS`, `ASIM_DRAL_NODE_CLASS`, `ASIM_CLOCKABLE_CLASS`和`ASIM_ADF_NODE_CLASS`。
+`ASIM_REGISTRY_CLASS`提供了module的状态注册信息，包括状态转换信息和运行的统计数据；
+`ASIM_DRAL_NODE_CLASS`处理DRAL(Data Reuse Analysis Language)节点相关的信息，DRAL是计算机体系结构模拟数据分析和可视化的语言。其中还提供了ActivateEvents, DeactivateEvents, 和 AreEventsActivated函数激活/停用事件；
+`ASIM_CLOCKABLE_CLASS`提供module的时序注册，除了设置时钟域自身的时序信息，还涉及将module注册到某个时钟域下运行的操作，以及模块执行的线程维护；
+`ASIM_ADF_NODE_CLASS`提供通过dream toolkit进行可视化的方法。
+`ASIM_MODULE_CLASS`内部还有一个`ASIM_MODULELINK_CLASS`链表，存储子模块的相关信息。
+
+awb/lib/libawb下的module.cpp提供了完全不一样的解读，那个文件里的定义的Module类函数中体现了对.awb文件的解析，那个应该才是和论文一致的原始版本。
+Module::Parse提供了解读awb文件的接口，通过正则表达式匹配对应的label，并调用相应的setxxx函数实现对应成员变量的赋值，这里提供的还是抽象的封装。
+
+#TODO:
+代码里有很多“注册路径”，还没看懂是类似.awb中public/private类别的模块专属模型文件，还是输出日志和状态信息的路径。细看一下。
+`ASIM_CLOCKABLE_CLASS`的register方法可以看一下，module.h/cpp中的register同理。
+
+
 
 ### ports实现
 
