@@ -139,6 +139,36 @@ pca通过p维的workload space转换为q维度的空间实现，转换后的维�
 
 <img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20230928165020660.png" alt="image-20230928165020660" style="zoom:50%;" />
 
-下面讲一下设计的细节：
+下面讲一下设计的细节，第一步是描述workload中不同的benchmark的行为特征，有如下方法：
 
-1.   描述workload中不同benchmark的行为特征，使用
+1.   描述workload中不同benchmark的行为特征，使用硬件性能监视器，测量的内容包括cache miss、bpu miss、ipc等内容。但是可能存在误导，即不同的workload测试表现出相似的行为，下图中SPEC CPU2000的 gzip和 BioPerf的fasta 在 cpi以及cache miss惊人的相似，但是workset的大小和内存的访问模式却相差很大，二者的大小相差一个数量级。
+
+<img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20231009185252821.png" alt="image-20231009185252821" style="zoom:50%;" />
+
+2.   Hardware performance monitor data across multiple machines. 这是对上面的改进，不止在一台机器上收集硬件性能监控数据，而是在许多机器上都收集，从而产生更全面的workload特征。Phansalkar et al. 设计了一个实验，在五台不同的机器上使用四种不同的 ISA 和编译器（IBM Power、Sun UltraSPARC、Itanium 和 x86）来表征 SPEC CPU2006 基准测试套件。使用多机特征作为pca workload的输入，用于研究SPEC CPU2006测试之间的多样性和相似性。SPEC使用这种方法开发了CPU2006。
+
+3.   Detailed simulation. 使用周期精确的模拟器收集程序特征，但是很费时间，比native执行慢5个数量级，但是能够在硬件还未可以使用之前就获取相应的特征。
+
+4.   Microarchitecture-independent workload characterization. 收集独立于特定微体系结构的程序特征，但是这种特征只能通过软件（Pin\Atom)进行测量，也比较耗时，单相比周期精确模拟器还是快点。下图是与微架构无关的特征：
+
+     <img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20231009195744727.png" alt="image-20231009195744727" style="zoom: 67%;" />
+
+第二步是PCA主成分分析
+
+将许多可能相关的程序特征转化为较少数量的不相关主成分，保留的主成分数量远小于原始数据集中的维度数量。（其他太多了略
+
+<img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20231009200511186.png" alt="image-20231009200511186" style="zoom:50%;" />
+
+PCA的优势：
+
+1.   workload analysis. 能够可视化workload空间，下图中不同的颜色代表不同的benchmark， 第一主成分pc1量化了benchmark的控制流行为，即具有较少的分支和较低的icache miss rate，ijpeg最高， pc2中最高的是go和compress，其余的类推。
+
+     从图中也能够得到一些结论，一些benchmark与workload中其他的benchmark都不同，ijpeg go compress过于孤立，图2的TPC-D受输入影响较大，而ijpeg几乎不受输入的影响。
+
+<img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20231009201133987.png" alt="image-20231009201133987" style="zoom:50%;" />
+
+2.   workload reduction. pca之后聚类分析，可以将benchmark分组为有限的集群，集群的中心可以作为代表性的benchmark。下图中SPEC CPU2006与完整的整数和浮点数测试套件相比，误差只有3.8%和7%，但是工作量大大降低。
+
+![image-20231009202411849](./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20231009202411849.png)
+
+看到3.3
