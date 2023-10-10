@@ -171,4 +171,47 @@ PCA的优势：
 
 ![image-20231009202411849](./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20231009202411849.png)
 
-看到3.3
+### PLACKETT AND BURMAN BASED WORKLOAD DESIGN
+
+Yi et al.设计了一种新方法simulation-friendly，和PCA方法效率差不多，计算效率不如PCA, 基于PCA的程序特征比运行该方法所需的详细周期精确模拟的方法更有效。（这里略
+
+<img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20231010193732175.png" alt="image-20231010193732175" style="zoom:67%;" />
+
+### LIMITATIONS AND DISCUSSION
+
+以上两种方法的有局限性，减少的workload可能无法捕获更广泛的应用程序集的所有行为，即覆盖率不足。举例，value prediction是预测和推测指令结果的微架构技术，架构师想要评估性能，假设减少的workload是根据一组程序特征选择的，并且这组特征不捕获对应的局部价值和可预测性，那么实际的预测中就丢失了这两个概念。因此需要经常检查减少的workload的代表性工作量。
+
+
+
+## ch4 Analytical Performance Modeling
+
+分析性能建模方法相比仿真不太准确，但是更快，可以快速探索大型项目的设计空间，在设计早期提供指南，后期再通过仿真进行细粒度探索。即分析建模粗粒度，仿真细粒度。
+
+### 经验建模与机制(mechanistic)建模
+
+1.   机制建模基于第一原理构建性能模型，需要对系统底层机制的理解，自下而上构建性能模型，可以看成白盒建模。
+
+2.   经验建模使用黑盒方法构建性能模型，通过统计或者机器学习方法从训练数据中学习性能建模。经验建模更容易推断出性能模型，但是可以观察到的内容比机制建模要少。
+
+3.   机制-经验混合建模，称为灰盒建模，从经验建模方法学习如何简化性能模型的构建，从机制建模方法学习更好的洞察力。从通用的性能公式开始（改公式来自于对底层系统的理解），公式包含很多未知数，通过拟合来推断未知参数。
+4.   总结：这两种建模没有详细的区分，都互相包含一部分。
+
+
+
+### 经验建模
+
+1.   线性回归，回归系数代表各自输入变量对整体的影响，线性回归模型会将性能和微架构参数(发射宽度，缓存大小等）联系起来，寻找最佳拟合位置。
+
+<img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20231010201710301.png" alt="image-20231010201710301" style="zoom:67%;" />
+
+上图中的公式假设xi和xj各自独立没有干扰，但实际的体系结构互相之间有影响，例如更优的内存层次对应更低的cache miss。下图的公式考虑了xi xj的交互，同样可以拓展到更高阶的xi xj xk 。。。
+
+![image-20231010202820266](./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20231010202820266.png)
+
+使用回归建模是为了了解微架构参数之间的相互作用关系，Joseph et al. 提出该方法，参数可以选用管道深度、处理器宽度、rob大小、cache大小等，并且可以选定交互数量。使用最小二乘法寻找最佳拟合模型，最终结果是每个回归系数的估计值，系数的大小和符号代表各个参数对微架构整体性能的影响。
+
+构建回归模型需要处理一系列问题。如何选择微架构输入参数，如果选择太多会影响模型构建时间，太少会影响准确率。参数的范围也难以取舍，通常会设置的很大。Joseph et al.将6个微架构参数及其相互作用作为输入，将ipc作为指标，回归系数可正可负。下图中增加rob size之后回归系数减小，因为变为负数了，但IPC会随着rob size增加
+
+<img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20231010210507227.png" alt="image-20231010210507227" style="zoom:67%;" />
+
+到4.2.2
