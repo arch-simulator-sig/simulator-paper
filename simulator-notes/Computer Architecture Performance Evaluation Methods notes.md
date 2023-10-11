@@ -214,4 +214,24 @@ Yi et al.设计了一种新方法simulation-friendly，和PCA方法效率差不�
 
 <img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20231010210507227.png" alt="image-20231010210507227" style="zoom:67%;" />
 
-到4.2.2
+2.   非线性回归
+
+线性假设的限制性太大，还有平方根、对数、幂等函数，但是这些非线性变化如果用于整个输入变量的范围，那么可能会一个区域的好拟合影响到另一个区域的拟合。
+
+Lee and Brooks又提出了分段多项式，每个Si(x)都是一个多项式，高阶多项式的拟合更好，Lee and Brooks基于分段高阶多项式构建了多处理器性能模型。
+
+<img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20231011225059552.png" alt="image-20231011225059552" style="zoom: 67%;" />
+
+3.   神经网络
+
+神经网络可以自动从一组输入中预测目标（性能，功率。。）神经网络看作是广义非线性模型，相比与Lee and Brooks的工作，神经网络更自动化，而分段函数则有更好的统计理解。下图是全连接网络，使用sigmoid激活函数。训练神经网络可以视作搜索问题，寻找最佳weight使得预测值和测量值的误差最低，通过反向传播训练。
+
+<img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20231011225849490.png" alt="image-20231011225849490" style="zoom:67%;" />
+
+4.   经验建模的限制
+
+     需要大量的模拟数据
+
+
+
+### 机制建模
