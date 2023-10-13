@@ -5,6 +5,7 @@
 | 开源项目                                        | 链接                                                         | 概述                                                         | 评级                           |
 | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------ |
 | sim-godson                                      | https://github.com/dzwduan/sim-godson                        | 应有尽有                                                     | :star::star::star::star::star: |
+| ml-rsim                                         | https://github.com/dzwduan/ml-rsim                           | 作者张立新，自行搜索                                         | :star::star::star::star::star: |
 | mipt-mips                                       | https://github.com/MIPT-ILab/mipt-mips                       | cycle accurate, fork asim 能run                              | :star::star::star::star:       |
 | map                                             | https://github.com/sparcians/map                             | 20年老法师框架，应有尽有，维护也很积极，可以与systemc gem5等lian'dong | :star::star::star::star:       |
 | raspsim                                         | https://github.com/aengelke/raspsim                          | fork from PTLsim，但是可以借鉴一部分超标量的设计写法         | :star::star::star::star:       |
