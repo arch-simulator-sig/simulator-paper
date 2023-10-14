@@ -54,4 +54,6 @@
 
 [龙芯cpu发展史](龙芯cpu发展史.md)
 
+[龙芯3号发展史](龙芯3号发展史.md)
+
 [arch相关工具集合](https://pages.cs.wisc.edu/~arch/www/tools.html)
