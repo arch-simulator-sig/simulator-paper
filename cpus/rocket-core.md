@@ -40,6 +40,8 @@ Frontend用于取指和预译码，
 
 [rocket-chip overview](https://www.cl.cam.ac.uk/~jrrk2/docs/untether-v0.2/overview/)
 
+https://www.jianshu.com/p/f57cfada632f
+
 https://www.zhihu.com/column/c_1425551698199130112
 
 [Rocket Core: Return Address Stack](https://www.jianshu.com/p/27f38bae827d)
