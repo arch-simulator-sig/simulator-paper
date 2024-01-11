@@ -4,6 +4,7 @@
 
 | 开源项目                                        | 链接                                                         | 概述                                                         | 评级                           |
 | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------ |
+| calipers                                        | https://github.com/microsoft/calipers                        | 图依赖的性能建模，同时还需要参考白晨的macro paper，比较重要！ | :star::star::star::star::star: |
 | sim-godson                                      | https://github.com/dzwduan/sim-godson                        | 执行驱动，cache部分精确建模，代码风格极好，几乎没有发现bug   | :star::star::star::star::star: |
 | macsim                                          | https://github.com/gthparch/macsim                           | trace driven or execution-drive cycle level simulator,支持多核、互联网络模型和电源模型 | :star::star::star::star:       |
 | akita                                           | https://github.com/sarchlab/akita                            | https://space.bilibili.com/91181150      有课程              | :star::star::star::star::star: |
