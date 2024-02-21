@@ -17,8 +17,8 @@
 | map                                             | https://github.com/sparcians/map                             | 20年老法师框架，应有尽有，维护也很积极，可以与systemc gem5等联动 | :star::star::star::star:       |
 | raspsim                                         | https://github.com/aengelke/raspsim                          | fork from PTLsim，但是可以借鉴一部分超标量的设计写法         | :star::star::star::star:       |
 | scarab                                          | https://github.com/hpsresearchgroup/scarab                   | 挑不出毛病，除了no smp                                       | :star::star::star::star:       |
-| champsim                                        | https://github.com/ChampSim/ChampSim                         | for education，简简单单入个门                                | :star::star::star::star:       |
-| dreamCore v1 & v2                               | https://github.com/lizhirui/DreamCoreV2                      | cycle accurate ooo simulator                                 | :star::star::star::star:       |
+| champsim                                        | https://github.com/ChampSim/ChampSim                         | for education，简简单单入个门                                | :star::star::star::star        |
+| dreamCore v1 & v2                               | https://github.com/lizhirui/DreamCoreV2                      | 将全局的dff放到一个列表里边统一更新，速度不是很快，更注重微架构的实现，正在尝试cv一个demo :building_construction: | :star::star::star::star:       |
 | Asim                                            | https://github.com/Asim-Modeling                             | 30年老法师框架，藏东西了,和论文不符合，降级                  | :star::star::star:             |
 | simflex                                         | https://parsa.epfl.ch/simflex/                               | smarts                                                       |                                |
 | riscv-ovpsim                                    | https://github.com/riscv-ovpsim/imperas-riscv-tests          | 印度理工和sifive建模用，riscv主流工具，只开源了bin           | :star::star::star:             |
