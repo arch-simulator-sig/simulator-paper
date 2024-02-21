@@ -26,7 +26,9 @@
 
 7. https://github.com/lshpku/gem5-fs-handbook
 
-8. [vscode开发环境](https://luzhixing12345.github.io/gem5-doc)
+8. https://dingfen.github.io/cpp/2022/02/24/gem5-1.html
+
+9. [vscode开发环境](https://luzhixing12345.github.io/gem5-doc)
 
    
 

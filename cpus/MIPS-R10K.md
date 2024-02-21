@@ -1,4 +1,5 @@
 # Mips R10k
 
-refer pap
+refer paper
 
+https://zhuanlan.zhihu.com/p/632137830
