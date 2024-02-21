@@ -2,7 +2,7 @@
 
 学习路径
 
-1. read [gem5 learning](https://www.gem5.org/documentation/learning_gem5/introduction/) 
+1. read [gem5 learning](https://www.gem5.org/documentation/learning_gem5/introduction/) and [gem5 bootcamp](https://gem5bootcamp.github.io/gem5-bootcamp-env)
 
 2. finish [micro arch training](https://github.com/shinezyy/micro-arch-training)
 
@@ -26,4 +26,7 @@
 
 7. https://github.com/lshpku/gem5-fs-handbook
 
+8. [vscode开发环境](https://luzhixing12345.github.io/gem5-doc)
+
    
+
