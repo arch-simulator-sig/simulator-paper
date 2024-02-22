@@ -28,7 +28,11 @@
 
 8. https://dingfen.github.io/cpp/2022/02/24/gem5-1.html
 
-9. [vscode开发环境](https://luzhixing12345.github.io/gem5-doc)
+9. https://github.com/miaochenlu/Gem5_tutorials/
 
-   
+10. https://github.com/miaochenlu/learn_prefetcher
+
+11. [vscode开发环境](https://luzhixing12345.github.io/gem5-doc)
+
+    
 
