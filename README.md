@@ -4,19 +4,19 @@
 
 | 开源项目                                        | 链接                                                         | 概述                                                         | 评级                           |
 | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------ |
-| calipers                                        | https://github.com/microsoft/calipers  https://github.com/baichen318/arch-explorer                      | 图依赖的性能建模，同时还需要参考白晨的macro paper，比较重要！ | :star::star::star::star::star: |
+| calipers                                        | https://github.com/microsoft/calipers  https://github.com/baichen318/arch-explorer | 图依赖的性能建模，同时还需要参考白晨的macro paper，比较重要！ | :star::star::star::star::star: |
 | sim-godson                                      | https://github.com/dzwduan/sim-godson                        | 执行驱动，cache部分精确建模，代码风格极好，几乎没有发现bug   | :star::star::star::star::star: |
 | macsim                                          | https://github.com/gthparch/macsim                           | trace driven or execution-drive cycle level simulator,支持多核、互联网络模型和电源模型 | :star::star::star::star:       |
 | akita                                           | https://github.com/sarchlab/akita                            | https://space.bilibili.com/91181150      有课程              | :star::star::star::star::star: |
 | esesc                                           | https://github.com/masc-ucsc/esesc                           | qemu based，update recently, multi-core perf model           | :star::star::star::star::star: |
-| marss-riscv                                     | https://github.com/bucaps/marss-riscv                        | 全系统，cycle accurate, 支持ooo, 支持dramsim3和ramulator     | :star::star::star::star:       |
+| marss-riscv                                     | https://github.com/bucaps/marss-riscv                        | 全系统，cycle accurate, 支持ooo, 支持dramsim3和ramulator；实测下来发现需要在他的vm里边跑coremark，而且连coremark都跑不动，但是他的驱动很齐全，值得学习；已于2022停止更新 | :star::star::star:             |
 | ml-rsim                                         | https://github.com/dzwduan/ml-rsim                           | cache bus 建模可以参考                                       | :star::star::star::star:       |
 | mipt-mips                                       | https://github.com/MIPT-ILab/mipt-mips                       | cycle accurate, fork asim 能run                              | :star::star::star::star:       |
 | SimEng                                          | https://github.com/UoB-HPC/SimEng                            | 比较简洁，有文档，最近有更新                                 | :star::star::star::star:       |
 | onikiri2                                        | https://github.com/onikiri/onikiri2                          | cycle accurate                                               | :star::star::star::star:       |
 | map                                             | https://github.com/sparcians/map                             | 20年老法师框架，应有尽有，维护也很积极，可以与systemc gem5等联动 | :star::star::star::star:       |
 | raspsim                                         | https://github.com/aengelke/raspsim                          | fork from PTLsim，但是可以借鉴一部分超标量的设计写法         | :star::star::star::star:       |
-| scarab                                          | https://github.com/hpsresearchgroup/scarab                   | 挑不出毛病，除了no smp                                       | :star::star::star::star:       |
+| scarab                                          | https://github.com/hpsresearchgroup/scarab                   | x86 isa, 支持 600 KIPS trace-driven, 100 KIPS exec-driven，支持Wrong path simulation dvfs，但是只支持32bit, 不支持多线程，不支持操作系统，不支持mesh等；已于2022停止更新 | :star::star::star::star:       |
 | champsim                                        | https://github.com/ChampSim/ChampSim                         | for education，简简单单入个门                                | :star::star::star::star        |
 | dreamCore v1 & v2                               | https://github.com/lizhirui/DreamCoreV2                      | 将全局的dff放到一个列表里边统一更新，速度不是很快，更注重微架构的实现，正在尝试cv一个demo :building_construction: | :star::star::star::star:       |
 | Asim                                            | https://github.com/Asim-Modeling                             | 30年老法师框架，藏东西了,和论文不符合，降级                  | :star::star::star:             |
