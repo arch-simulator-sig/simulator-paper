@@ -13,7 +13,7 @@
 | ml-rsim                                         | https://github.com/dzwduan/ml-rsim                           | cache bus 建模可以参考                                       | :star::star::star::star:       |
 | mipt-mips                                       | https://github.com/MIPT-ILab/mipt-mips                       | cycle accurate, fork asim 能run                              | :star::star::star::star:       |
 | SimEng                                          | https://github.com/UoB-HPC/SimEng                            | 比较简洁，有文档，最近有更新                                 | :star::star::star::star:       |
-| onikiri2                                        | https://github.com/onikiri/onikiri2                          | cycle accurate                                               | :star::star::star::star:       |
+| onikiri2                                        | https://github.com/onikiri/onikiri2                          | 跑出来了，但是xml怎么看结果，lib还是win32的库，可视化也打不开, 流水线也是基于队列建模 | :star::star::star:             |
 | map                                             | https://github.com/sparcians/map                             | 20年老法师框架，应有尽有，维护也很积极，可以与systemc gem5等联动 | :star::star::star::star:       |
 | raspsim                                         | https://github.com/aengelke/raspsim                          | fork from PTLsim，但是可以借鉴一部分超标量的设计写法         | :star::star::star::star:       |
 | scarab                                          | https://github.com/hpsresearchgroup/scarab                   | x86 isa, 支持 600 KIPS trace-driven, 100 KIPS exec-driven，支持Wrong path simulation dvfs，但是只支持32bit, 不支持多线程，不支持操作系统，不支持mesh等；已于2022停止更新 | :star::star::star::star:       |
