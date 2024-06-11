@@ -24,7 +24,7 @@ evaluatione的作用：引导开发过程朝正确的方向进行，是关键！
 
 <img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20230927124331371.png" alt="image-20230927124331371" style="zoom:50%;" />
 
-Justin Rattner报告中提及，1990-2000年间，x86 处理器性能在 10 年时间内提高了 75 倍以上）：13×来自频率的提升，6×来自微架构的增强，而频率的50×提升又来自技术（13×）和==微架构==（4×）的改进 :)
+Justin Rattner报告中提及，1990-2000年间，x86 处理器性能在 10 年时间内提高了 75 倍以上）：13×来自频率的提升，6×来自微架构的增强，而频率的50×提升又来自技术（13×）和**微架构**（4×）的改进 :)
 
 ipc vs cpi :  假设时钟频率相同，可以对比ipc；但是cpi可以计算一些额外的工作如：分支预测错误、cache miss等未命中事件的cycle数
 
@@ -34,21 +34,21 @@ ipc并不是多线程workload 准确可靠的性能指标，并且会导致系�
 
 Alameldeen and Wood 发现ipc 与 multi-threaded program performance并不是正相关，并且处理器核心越多，相关性越低，因为会有更多进程浪费在自旋上。在产业界体现在web服务器、数据库服务器以及邮件服务器等商业负载，这些都需要花费大量时间在操作系统上。
 
-Wenisch et al. 提出了==u-ipc==，仅考虑用户模式指令，他们发现u-ipc与数据库、web服务器等密切相关。但是u-ipc无法捕获系统级代码的性能， 该部分在商业的workload中占据相当的比例。
+Wenisch et al. 提出了**u-ipc**，仅考虑用户模式指令，他们发现u-ipc与数据库、web服务器等密切相关。但是u-ipc无法捕获系统级代码的性能， 该部分在商业的workload中占据相当的比例。
 
-Emer and Clark 解决了上面的问题，在==统计指令数据时排除vms null进程==，即单独剥离开自旋锁循环指令。
+Emer and Clark 解决了上面的问题，在**统计指令数据时排除vms null进程**，即单独剥离开自旋锁循环指令。
 
 ### 多程序
 
 多线程和多核处理器不仅执行多个线程的workload，还同时执行多个独立的程序。例如，SMT处理器可以在单核处理器上执行多个作业，多核处理器也可以让每个作业在单独的核心运行，或者每个核的硬件线程执行多个作业。
 
-多程序workload性能分析的根本问题是独立的共同执行程序会互相影响性能，性能interaction取决于共享资源的量，多核处理器通常共享最后一级cache、片上互联网络核内存的片外带宽。Chandra et al. 的实验表明，共同执行两个独立程序时，由于==共享资源==，单个程序的性能受到高达65%的影响。Tuck and Tullsen 在intel p4（双硬件线程SMT）上测试，部分程序的性能为独立运行的71%，另一部分是98%。
+多程序workload性能分析的根本问题是独立的共同执行程序会互相影响性能，性能interaction取决于共享资源的量，多核处理器通常共享最后一级cache、片上互联网络核内存的片外带宽。Chandra et al. 的实验表明，共同执行两个独立程序时，由于**共享资源**，单个程序的性能受到高达65%的影响。Tuck and Tullsen 在intel p4（双硬件线程SMT）上测试，部分程序的性能为独立运行的71%，另一部分是98%。
 
-Eyerman and Eeckhout采用自顶向上方法提出新的性能指标，即==STP(系统吞吐量) 和 平均标准化周转时间 (ANTT)==，这两个指标分别来自用户和系统。对于用户：作业周转时间 （完成-提交），对于系统：整个系统的吞吐量（每个时间单位完成的作业数量），这两个指标没有直接相关性，可能优化一个会对另一个产生副作用，例如短作业优先会优化吞吐量，但是影响长作业周转时间。
+Eyerman and Eeckhout采用自顶向上方法提出新的性能指标，即**STP(系统吞吐量) 和 平均标准化周转时间 (ANTT)**，这两个指标分别来自用户和系统。对于用户：作业周转时间 （完成-提交），对于系统：整个系统的吞吐量（每个时间单位完成的作业数量），这两个指标没有直接相关性，可能优化一个会对另一个产生副作用，例如短作业优先会优化吞吐量，但是影响长作业周转时间。
 
 下面开始分析系统吞吐量
 
-首先定义程序的==标准化进程==： TiSP是单程序模式执行时间， TiMP是多程序模式执行时间；NPi < 1，该值代表了多程序执行过程中程序的进度，举例NPi=0.7，代表在10ms的多程序执行时间片内进行了7ms的单程序进度。
+首先定义程序的**标准化进程**： TiSP是单程序模式执行时间， TiMP是多程序模式执行时间；NPi < 1，该值代表了多程序执行过程中程序的进度，举例NPi=0.7，代表在10ms的多程序执行时间片内进行了7ms的单程序进度。
 
 <img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20230927152146504.png" alt="image-20230927152146504" style="zoom:50%;" />
 
@@ -58,7 +58,7 @@ STP系统吞吐量定义为NPi之和，即STP是所有作业的累积进度，�
 
 STP通常>1，如果小于1，那么分时独占更好。对于某些程序组合，严重的资源共享会导致STP<1，如内存密集型workload会从最后一级的共享缓存中替换彼此的工作集，导致未命中大幅增加。
 
-接着定义==平均标准化周转时间==：NTT是NP的倒数，ANTT即取平均，ANTT越低越好。上面的例子中，NP1=0.75, NP2=0.5, NTT1=1.33，NTT2=2，ANTT = 1.67。该值衡量了用户所能感知到的多程序执行相对于但程序执行期间的slowdown。
+接着定义**平均标准化周转时间**：NTT是NP的倒数，ANTT即取平均，ANTT越低越好。上面的例子中，NP1=0.75, NP2=0.5, NTT1=1.33，NTT2=2，ANTT = 1.67。该值衡量了用户所能感知到的多程序执行相对于但程序执行期间的slowdown。
 
 <img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20230927162738987.png" alt="image-20230927162738987" style="zoom:50%;" />
 
@@ -72,19 +72,19 @@ STP通常>1，如果小于1，那么分时独占更好。对于某些程序组�
 
 <img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20230927163507703.png" alt="image-20230927163507703" style="zoom:50%;" />
 
-==ipc_throughout==被评价为naive，在性能方面没有意义。
+**ipc_throughout**被评价为naive，在性能方面没有意义。
 
 <img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20230927163519478.png" alt="image-20230927163519478" style="zoom:50%;" />
 
-==weighted speedup==指标由 Snavely and Tullsen提出，评估作业在多线程处理器上共同执行的效果。思路是如果一个作业调度在一定时间间隔内比另一个作业调度能够执行更多指令，说明更加symbiotic(共生性)，可以衡量作业组合中每个作业的贡献。实际上该公式等价于STP:)
+**weighted speedup**指标由 Snavely and Tullsen提出，评估作业在多线程处理器上共同执行的效果。思路是如果一个作业调度在一定时间间隔内比另一个作业调度能够执行更多指令，说明更加symbiotic(共生性)，可以衡量作业组合中每个作业的贡献。实际上该公式等价于STP:)
 
 <img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20230927164114358.png" alt="image-20230927164114358" style="zoom:50%;" />
 
-==Harmonic mean== （调和平均）指标由Luo et al. 提出，如果一个或多个程序的ipc speedup低，那么会得到比算术平均值更低的值，该指标体现了公平性，但是并不反应系统相关的含义？ 实际上是ANTT的倒数:)
+**Harmonic mean** （调和平均）指标由Luo et al. 提出，如果一个或多个程序的ipc speedup低，那么会得到比算术平均值更低的值，该指标体现了公平性，但是并不反应系统相关的含义？ 实际上是ANTT的倒数:)
 
 <img src="./../image/Computer%20Architecture%20Performance%20Evaluation%20Methods%20notes/image-20230927165005676.png" alt="image-20230927165005676" style="zoom:50%;" />
 
-==STP + ANTT== : 二者应该互补使用，才能提供完整的视角，这是 平均作业周转时间和系统吞吐量的tradeoff。
+**STP + ANTT** : 二者应该互补使用，才能提供完整的视角，这是 平均作业周转时间和系统吞吐量的tradeoff。
 
 
 
@@ -106,7 +106,7 @@ STP通常>1，如果小于1，那么分时独占更好。对于某些程序组�
 
 ## ch3 Workload Design
 
-选择不具有代表性的workload会导致错误的设计，Maynard et al.将商业应用程序（包括数据库服务器）的行为与计算机体系结构中广泛使用的 SPEC CPU 基准进行比较。他们发现商业工作负载通常表现出更复杂的分支行为、更大的代码和数据占用空间以及更多的操作系统和 I/O 活动。特别是，与商业工作负载相比，SPEC CPU 基准测试的指令缓存占用空间较小；此外，不适合片上高速缓存的内存访问模式通常是规则的或跨步的。因此，SPEC CPU 基准测试非常适合管道研究，但==在内存性能研究中应谨慎使用==。仅根据 SPEC CPU 基准来指导处理器设计决策可能会导致商业工作负载的性能不佳。
+选择不具有代表性的workload会导致错误的设计，Maynard et al.将商业应用程序（包括数据库服务器）的行为与计算机体系结构中广泛使用的 SPEC CPU 基准进行比较。他们发现商业工作负载通常表现出更复杂的分支行为、更大的代码和数据占用空间以及更多的操作系统和 I/O 活动。特别是，与商业工作负载相比，SPEC CPU 基准测试的指令缓存占用空间较小；此外，不适合片上高速缓存的内存访问模式通常是规则的或跨步的。因此，SPEC CPU 基准测试非常适合管道研究，但**在内存性能研究中应谨慎使用**。仅根据 SPEC CPU 基准来指导处理器设计决策可能会导致商业工作负载的性能不佳。
 
 ### 从workload space 到 representative workload
 
@@ -114,7 +114,7 @@ STP通常>1，如果小于1，那么分时独占更好。对于某些程序组�
 
 理想情况下，我们希望有一组较小的workload能够代表更加广泛的workload space，嵌入式系统可以，但是通用计算机系统则依赖经验，但是这部分的workload数量相当多，因此需要减少。
 
-==为什么给出一个良好的workload比较困难？==
+**为什么给出一个良好的workload比较困难？**
 
 1.   workload space可能涉及多个领域，每个领域有大量的程序，因此针对领域提出了不同的workload suits 例如spec cpu, mediabench, bioperf。
 2.   workload space本身就在不断变化，需要使用现有的架构来评估未来的系统workload，还需要建立在旧的编译技术之上。Yi et al. 使用spec cpu95基准优化处理器，使用spec cpu2000评估性能和能效，发现前者优化得到的性能比后者差20%，因为sepc cpu2000比 spec cpu95更加需要内存操作。因此架构师应该尽可能的预测未来的workload。
@@ -131,7 +131,7 @@ STP通常>1，如果小于1，那么分时独占更好。对于某些程序组�
 1.   PCA主成分分析 描述benchmark直接的相似性
 2.   采用Plackett and Burman的实验设计
 
-==PCA设计==
+**PCA设计**
 
 pca可以降低数据集的维度，做法是将workload space看成是具有p个维度的空间，维度即程序特征，包括ILP、inst mix、branch predictability，code footprint,memory working set size, and memory access patterns。维度太高很难直观的理解workload space， 并且不同的特征还有相关性。
 

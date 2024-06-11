@@ -15,6 +15,7 @@
 | akita                                           | https://github.com/sarchlab/akita                            | https://space.bilibili.com/91181150      有课程，有文档，能提问 | :star::star::star::star::star: |
 | esesc                                           | https://github.com/masc-ucsc/esesc                           | 40MIPS with sampling ；可配置的内存层次，支持PPA，发表在HPCA2013 | :star::star::star::star::star: |
 | macsim                                          | https://github.com/gthparch/macsim                           | trace driven or execution-drive cycle level simulator,支持多核、noc，PPA； | :star::star::star::star:       |
+| p2im                                            | https://whutslab.github.io/2023/04/26/%E7%BB%84%E4%BC%9A%E7%BA%AA%E8%A6%81/ | 外设建模，基于qemu                                           |                                |
 | mipt-mips                                       | https://github.com/MIPT-ILab/mipt-mips                       | cycle accurate, fork asim 能run                              | :star::star::star::star:       |
 | SimEng                                          | https://github.com/UoB-HPC/SimEng                            | 比较简洁，有文档，最近有更新                                 | :star::star::star::star:       |
 | dreamCore v1 & v2                               | https://github.com/lizhirui/DreamCoreV2                      | 将全局的dff放到一个列表里边统一更新，速度不是很快，更注重微架构的实现，正在尝试cv一个demo :building_construction: | :star::star::star::star:       |
