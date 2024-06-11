@@ -7,3 +7,8 @@
 - 支持A-Ports formalism
 - 使用Heracles进行对比实验
 - bluespec提供编译器支持
+
+## Introduction
+
+处理器的架构设计通常是基于直觉的，通过对架构的参数进行量化研究，反复实验，最终才能够进入RTL步骤。
+
