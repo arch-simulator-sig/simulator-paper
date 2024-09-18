@@ -10,8 +10,9 @@
 
 | 开源项目                                        | 链接                                                         | 概述                                                         | 评级                           |
 | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------ |
-| calipers                                        | https://github.com/microsoft/calipers  https://github.com/baichen318/arch-explorer | 图依赖的性能建模，同时还需要参考白晨的macro paper，比较重要！ | :star::star::star::star::star: |
 | HAsim                                           | https://github.com/HAsim-Modeling                            | hyper-asim 多核，基于fpga设计                                |                                |
+| qflex                                           | https://github.com/parsa-epfl/qflex                          | cycle accurate + qemu                                        |                                |
+| calipers                                        | https://github.com/microsoft/calipers  https://github.com/baichen318/arch-explorer | 图依赖的性能建模，同时还需要参考白晨的macro paper，比较重要！ | :star::star::star::star::star: |
 | sim-godson                                      | https://github.com/dzwduan/sim-godson                        | 执行驱动，cache部分精确建模，代码风格极好，几乎没有发现bug   | :star::star::star::star::star: |
 | akita                                           | https://github.com/sarchlab/akita                            | https://space.bilibili.com/91181150      有课程，有文档，能提问 | :star::star::star::star::star: |
 | esesc                                           | https://github.com/masc-ucsc/esesc                           | 40MIPS with sampling ；可配置的内存层次，支持PPA，发表在HPCA2013 | :star::star::star::star::star: |
@@ -59,6 +60,8 @@
 | out-of-roder simulator                          | https://github.com/Jacob-Hoff-man/cs2410                     |                                                              |                                |
 | kite simulaotr                                  | https://github.com/yonsei-icsl/Kite                          | 已经看完，没有太大的参考价值，主要维护了ticks变量用于控制时钟，latency标识exu的执行模块具体的流水级别，但是仅限于ticks++，同时bpu设计缺失，cache write throuth，整体为5级流水架构 |                                |
 | Wisconsin Wind Tunnel II                        | https://pages.cs.wisc.edu/~wwt/wwt2/                         |                                                              |                                |
+
+
 
 
 
