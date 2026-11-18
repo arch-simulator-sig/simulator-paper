@@ -49,31 +49,31 @@ _A curated collection of computer architecture simulators, papers and reading no
 
 | 项目 | 简介 | 评级 |
 | --- | --- | :---: |
-| [akita](https://github.com/sarchlab/akita) | 有文档、有[课程](https://space.bilibili.com/91181150)、能提问 | ⭐⭐⭐⭐⭐ |
+| [akita](https://github.com/sarchlab/akita) | 有[文档](https://akitasim.dev/docs/akita/)、有[课程](https://space.bilibili.com/91181150)、能在 GitHub Discussions 提问 | ⭐⭐⭐⭐⭐ |
 | [MAP](https://github.com/sparcians/map) | 20 年老法师框架，应有尽有，维护积极，可与 SystemC、gem5 等联动 | ⭐⭐⭐⭐ |
 | [Asim](https://github.com/Asim-Modeling) [📝](simulator-notes/asim-notes.md) [📄](paper/Asim%20-%20A%20Performance%20Model%20Framework%20%282002.02.computer.asim%29.pdf) | 30 年老法师框架，藏东西了，和论文不符，降级 | ⭐⭐⭐ |
-| [HAsim](https://github.com/HAsim-Modeling) [📝](simulator-notes/HAsim.md) [📄](paper/asim/HAsim%20Cycle-Accurate%20Multicore%20Performance.pdf) | Hyper-Asim，多核，基于 FPGA 设计 | — |
+| [HAsim](https://github.com/HAsim-Modeling) [📝](simulator-notes/HAsim.md) [📄](paper/asim/HAsim%20Cycle-Accurate%20Multicore%20Performance.pdf) | Hardware Asim，基于 FPGA 的多核 cycle-accurate 模拟器 | — |
 
 ### CPU 微架构模拟器
 
 | 项目 | 简介 | 评级 |
 | --- | --- | :---: |
 | [sim-godson](https://github.com/dzwduan/sim-godson) | 执行驱动，cache 部分精确建模，代码风格极好，几乎没有发现 bug | ⭐⭐⭐⭐⭐ |
-| [ESESC](https://github.com/masc-ucsc/esesc) | 采样模式下 40 MIPS；可配置的内存层次，支持 PPA；发表于 HPCA 2013 | ⭐⭐⭐⭐⭐ |
+| [ESESC](https://github.com/masc-ucsc/esesc) | 采样模式下 40 MIPS；可配置的内存层次，支持 PPA；发表于 HPCA 2013。仓库已归档，后继为 [desesc](https://github.com/masc-ucsc/desesc) | ⭐⭐⭐⭐⭐ |
 | [MacSim](https://github.com/gthparch/macsim) | trace-driven / execution-driven 的 cycle-level 模拟器，支持多核、NoC、PPA | ⭐⭐⭐⭐ |
-| [MIPT-MIPS](https://github.com/MIPT-ILab/mipt-mips) [📝](simulator-notes/mipt.md) | cycle-accurate，fork asim，能跑通 | ⭐⭐⭐⭐ |
+| [MIPT-MIPS](https://github.com/MIPT-ILab/mipt-mips) [📝](simulator-notes/mipt.md) | cycle-accurate 的 MIPS / RISC-V 模拟器，能跑通；2022 年起已归档 | ⭐⭐⭐⭐ |
 | [SimEng](https://github.com/UoB-HPC/SimEng) | 比较简洁，有文档，近期仍在更新 | ⭐⭐⭐⭐ |
 | [DreamCore V1 & V2](https://github.com/lizhirui/DreamCoreV2) [📝](simulator-notes/dreamCoreV2-建模思路.md) | 将全局 DFF 放到一个列表里统一更新，速度不是很快，更注重微架构的实现；正在尝试复刻一个 demo 🏗️ | ⭐⭐⭐⭐ |
 | [raspsim](https://github.com/aengelke/raspsim) [📝](simulator-notes/raspsim.md) | fork 自 PTLsim，可以借鉴一部分超标量的设计写法 | ⭐⭐⭐⭐ |
-| [Scarab](https://github.com/hpsresearchgroup/scarab) | x86 ISA；trace-driven 600 KIPS、exec-driven 100 KIPS；支持 wrong-path 模拟、DVFS；但只支持 32 位，不支持多线程、操作系统、mesh 等；2022 年已停止更新 | ⭐⭐⭐⭐ |
+| [Scarab](https://github.com/hpsresearchgroup/scarab) | x86 ISA；trace-driven 600 KIPS、exec-driven 100 KIPS；支持 wrong-path 模拟、DVFS；但不支持 32 位程序，不支持多线程、操作系统、mesh 等。原仓库已不活跃，现由 UCSC 在 [litz-lab/scarab](https://github.com/litz-lab/scarab) 继续维护 | ⭐⭐⭐⭐ |
 | [ChampSim](https://github.com/ChampSim/ChampSim) | 面向教学，简单入门，可在其基础上做分支预测器、预取器设计 | ⭐⭐⭐⭐ |
 | [onikiri2](https://github.com/onikiri/onikiri2) | 能跑起来，但 XML 结果不知如何查看，lib 仍是 Win32 库，可视化也打不开；流水线基于队列建模 | ⭐⭐⭐ |
-| [gem5](https://github.com/gem5/gem5) [📝](simulator-notes/Gem5.md) | 乱序核为 tick-driven，cache 为 event-driven。很多写法值得借鉴：门级 stdcell、动态功耗统计、各类抽象功能的写法。微架构基于 Alpha 21264。缺点：需基于原有框架开发，框架兼容性高但损失了相当的性能，修改微架构成本过高；用 Python 作为用户接口调用底层 C++，目前可能并不需要 | ⭐⭐⭐ |
+| [gem5](https://github.com/gem5/gem5) [📝](simulator-notes/Gem5.md) | 乱序核为 tick-driven，cache 为 event-driven。很多写法值得借鉴：附带的 DSENT 含 stdcell 级功耗 / 面积模型（面向 NoC）、动态功耗统计、各类抽象功能的写法。O3 微架构大致基于 Alpha 21264。缺点：需基于原有框架开发，框架兼容性高但损失了相当的性能，修改微架构成本过高；用 Python 作为用户接口调用底层 C++，目前可能并不需要 | ⭐⭐⭐ |
 | [SiNUCA](https://github.com/mazalves/sinuca) [📝](simulator-notes/SiNUCA.md) [📄](paper/Alves%20等%20-%202015%20-%20SiNUCA%20A%20Validated%20Micro-Architecture%20Simulator.pdf) | 经过验证的微架构模拟器（2015） | — |
 | [SimpleScalar](https://github.com/toddmaustin/simplesim-3.0) [📝](simulator-notes/SimpleScalar.md) [📄](paper/hack_guide.pdf) | 乱序处理器模拟器 | — |
 | [MGSim](https://github.com/svp-dev/mgsim) | 面向教学 | — |
-| [Patmos Simulator](https://github.com/t-crest/patmos-simulator) | 多核，基于 Ramulator 进行内存模拟 | — |
-| [Kite](https://github.com/yonsei-icsl/Kite) [📝](simulator-notes/Kite.md) | 已看完，参考价值不大：主要维护 ticks 变量控制时钟，latency 标识执行单元的具体流水级（仅限于 ticks++）；缺少 BPU 设计，cache 为 write-through，整体为 5 级流水 | — |
+| [Patmos Simulator](https://github.com/t-crest/patmos-simulator) | 多核，内存模拟可选基于 Ramulator | — |
+| [Kite](https://github.com/yonseicasl/Kite) [📝](simulator-notes/Kite.md) | 已看完，参考价值不大：主要维护 ticks 变量控制时钟，latency 标识执行单元的具体流水级（仅限于 ticks++）；分支预测器 / BTB 只有桩实现（恒 not-taken），cache 为 write-back，整体为 5 级流水 | — |
 | [cs2410 OoO Simulator](https://github.com/Jacob-Hoff-man/cs2410) | 乱序处理器模拟器（课程项目） | — |
 
 ### 全系统与虚拟平台
@@ -82,13 +82,13 @@ _A curated collection of computer architecture simulators, papers and reading no
 | --- | --- | :---: |
 | [MARSS-RISCV](https://github.com/bucaps/marss-riscv) | 全系统，cycle-accurate，支持乱序，支持 DRAMSim3 和 Ramulator。实测需要在它的 VM 里跑 CoreMark，且连 CoreMark 都跑不动；但驱动很齐全，值得学习。2022 年已停止更新 | ⭐⭐⭐ |
 | [ML-RSIM](https://github.com/dzwduan/ml-rsim) [📄](paper/mlrsim_utility.pdf) | cache / bus / DRAM 建模可以参考，考虑了 IO 与系统交互的影响，搭建了 IO 和操作系统的基础设施；但代码过于古老，需要重新移植才能在 Linux 上运行 | ⭐⭐⭐ |
-| [riscv-ovpsim](https://github.com/riscv-ovpsim/imperas-riscv-tests) | RISC-V 主流工具，印度理工和 SiFive 建模使用；只开源了二进制 | ⭐⭐⭐ |
+| [riscv-ovpsim](https://github.com/riscv-ovpsim/imperas-riscv-tests) | Imperas 出品的 RISC-V 主流工具，SiFive、IIT Madras（SHAKTI）等在用；模拟器只发布二进制，处理器模型源码以 Apache 2.0 开源 | ⭐⭐⭐ |
 | [riscv-vp](https://github.com/agra-uni-bremen/riscv-vp) | TLM 2.0 + 基于指令的时序模型，不考虑乱序、流水线、cache 等 | ⭐ |
 | [QFlex](https://github.com/parsa-epfl/qflex) | QEMU + cycle-accurate | — |
-| [P2IM](https://whutslab.github.io/2023/04/26/%E7%BB%84%E4%BC%9A%E7%BA%AA%E8%A6%81/) [📝](paper-notes/P2IM.md) | 外设建模，基于 QEMU | — |
+| [P2IM](https://github.com/RiS3-Lab/p2im) [📝](paper-notes/P2IM.md) | 外设建模，基于 QEMU（USENIX Security 2020）；另见[组会纪要](https://whutslab.github.io/2023/04/26/%E7%BB%84%E4%BC%9A%E7%BA%AA%E8%A6%81/) | — |
 | [VCML](https://github.com/machineware-gmbh/vcml) | TLM 组件库 | — |
 | [SoCLib](http://www.soclib.fr/trac/dev) | 基于 SystemC 的 SoC 虚拟原型平台 | — |
-| [ESYSim](https://github.com/wangeddie67/ESYSim) | 仿真模型 | — |
+| [ESYSim](https://github.com/wangeddie67/ESYSim) | 片上网络（NoC）仿真与可视化工具集，支持路由、虚通道、容错与功耗分析 | — |
 | [or1ksim](https://github.com/openrisc/or1ksim) | 功能模型 | — |
 | [riscv_vhdl](https://github.com/sergeykhbr/riscv_vhdl) | RISC-V SoC 的 VHDL 实现与配套模拟器 | — |
 
@@ -98,9 +98,9 @@ _A curated collection of computer architecture simulators, papers and reading no
 | --- | --- | :---: |
 | [Calipers](https://github.com/microsoft/calipers) [📄](paper/2201.05884.pdf) | 基于图依赖的性能建模，同时需要参考白晨的 [ArchExplorer](https://github.com/baichen318/arch-explorer)（MICRO 2023，[论文](paper/C180-MICRO2023-ArchExplorer%281%29.pdf)），比较重要！ | ⭐⭐⭐⭐⭐ |
 | [ZSim](https://github.com/s5z/zsim) [📝](simulator-notes/zsim.md) | 每秒数亿条指令，非 cycle-accurate，cache 建模很厉害 | — |
-| [Sniper](https://github.com/snipersim/snipersim) [📝](simulator-notes/sniper.md) | 区间模型（数学分析模型），很强，但代码比较难读、难上手 | — |
-| [SimFlex](https://parsa.epfl.ch/simflex/) [📄](paper/smarts2003isca.pdf) | SMARTS 采样 | — |
-| [SwarmArch](https://github.com/SwarmArch/sim) | 非 cycle-accurate，比较新（MIT），更注重分析应用程序 | — |
+| [Sniper](https://github.com/snipersim/snipersim) [📝](simulator-notes/sniper.md) | 以区间模型（数学分析模型）著称，9.0 起默认改用 ROB 模型（`-c interval` 仍可用）；很强，但代码比较难读、难上手 | — |
+| SimFlex [📄](paper/smarts2003isca.pdf) | SMARTS 采样；原主页已失效 | — |
+| [SwarmArch](https://github.com/SwarmArch/sim) | cycle-accurate，MIT 出品（MICRO 2015 起），更注重分析应用程序 | — |
 | [Wisconsin Wind Tunnel II](https://pages.cs.wisc.edu/~wwt/wwt2/) | 并行多处理器模拟器 | — |
 
 ### 异构与加速器
@@ -116,8 +116,8 @@ _A curated collection of computer architecture simulators, papers and reading no
 | 项目 | 简介 | 评级 |
 | --- | --- | :---: |
 | [cycle-accurate-SystemC-simulator-over-ramulator](https://github.com/Liu-Cheng/cycle-accurate-SystemC-simulator-over-ramulator) | 基于 Ramulator 的 SystemC 周期精确模拟器 | ⭐⭐⭐ |
-| [Ramulator](https://github.com/CMU-SAFARI/ramulator) | 高精度 DRAM 模拟器，二代好像有问题 | — |
-| [DRAMSys 4.0](https://github.com/tukl-msd/DRAMSys) | cycle-accurate **DDR3/4**，支持 gem5，基于 SystemC TLM2 | — |
+| [Ramulator](https://github.com/CMU-SAFARI/ramulator) | 高精度 DRAM 模拟器，[二代](https://github.com/CMU-SAFARI/ramulator2)好像有问题 | — |
+| [DRAMSys](https://github.com/tukl-msd/DRAMSys) | cycle-accurate，支持 DDR3/4、LPDDR4、GDDR5/6、HBM 等，支持 gem5，基于 SystemC TLM2 | — |
 | [NOCulator](https://github.com/CMU-SAFARI/NOCulator) | 片上网络（NoC）模拟器 | — |
 
 ### 功耗与面积
@@ -131,8 +131,8 @@ _A curated collection of computer architecture simulators, papers and reading no
 
 | 项目 | 简介 | 评级 |
 | --- | --- | :---: |
-| OpenSPARC T1 & T2 | 工业界源码，非 cycle-accurate，暂时搁置。官网已失效，需要代码请联系维护者 | ⭐⭐⭐ |
-| [fifo_ca_model](https://github.com/liang-aquarius/ca_model) | 每个周期对所有 module 执行 run 和 update，类似 SCore 的思路，支持 dump 波形；每个 clk 进行连线，大量赋值语句，速度很慢，跟 SCore 一样——说明不能瞎琢磨 | ⭐⭐ |
+| [OpenSPARC T1 & T2](https://www.oracle.com/servers/technologies/opensparc-overview.html) | 工业界源码，非 cycle-accurate，暂时搁置。官网已迁至 Oracle，源码仍可下载 | ⭐⭐⭐ |
+| [fifo_ca_model](https://github.com/liang-aquarius/ca_model) | 每个周期对所有 module 执行 update 和 run，类似 SCore 的思路，支持 dump 波形；每个 clk 进行连线，大量赋值语句，速度很慢，跟 SCore 一样——说明不能瞎琢磨 | ⭐⭐ |
 
 ---
 
@@ -178,7 +178,7 @@ _A curated collection of computer architecture simulators, papers and reading no
 
 **专题目录**
 
-- [`paper/loongson/`](paper/loongson) — 龙芯 1/2/3 号处理器设计与优化、Sim-Godson、SimOS-Godson、SimpleScalar 分析等
+- [`paper/loongson/`](paper/loongson) — 龙芯 1 / 2 号处理器设计与性能优化、TLB 优化、Sim-Godson、SimOS-Goodson、SimpleScalar 分析等
 - [`paper/asim/`](paper/asim) — Asim / AWB / HAsim、Bluespec、FPGA 加速模拟相关论文与报告（RAMP Gold、HySIM 等）
 
 ---
